@@ -7,11 +7,11 @@
   ],
   "scripts": {
     "format": "prettier --write .",
-    "build": "lerna run prepare --stream",
-    "lint": "lerna run lint --stream",
-    "test": "lerna run test --parallel",
-    "typecheck": "lerna run typecheck --stream",
-    "watch": "lerna run watch --parallel"
+    "build": "lerna run prepare --stream --",
+    "lint": "lerna run lint --stream --",
+    "test": "lerna run test --parallel --",
+    "typecheck": "lerna run typecheck --stream --",
+    "watch": "lerna run watch --parallel --"
   },
   "husky": {
     "hooks": {
