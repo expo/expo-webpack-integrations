@@ -6,9 +6,9 @@ import path from 'path';
 import resolveFrom from 'resolve-from';
 import url from 'url';
 
-import { Environment, FilePaths, InputEnvironment } from '../types';
 import { getBareExtensions } from './extensions';
 import getMode from './getMode';
+import { Environment, FilePaths, InputEnvironment } from '../types';
 
 // https://github.com/facebook/create-react-app/blob/9750738cce89a967cc71f28390daf5d4311b193c/packages/react-scripts/config/paths.js#L22
 function ensureSlash(inputPath: string, needsSlash: boolean): string {

@@ -1,22 +1,18 @@
 {
+  "preferGlobal": true,
   "name": "expo-pwa",
   "version": "0.0.127",
-  "main": "build",
-  "preferGlobal": true,
+  "author": "Expo <support@expo.dev>",
+  "description": "Create PWA resources for Expo projects",
+  "license": "MIT",
   "keywords": [
     "expo",
     "pwa",
     "react-native",
     "react-native-web"
   ],
-  "description": "Create PWA resources for Expo projects",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/expo/expo-cli.git",
-    "directory": "packages/pwa"
-  },
-  "author": "Expo <support@expo.dev>",
-  "license": "MIT",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "bin": {
     "expo-pwa": "./build/cli.js"
   },
@@ -24,20 +20,36 @@
     "build"
   ],
   "scripts": {
-    "prepare": "yarn run clean && yarn run build",
-    "test": "jest",
-    "lint": "eslint .",
-    "watch": "tsc --watch --preserveWatchOutput",
-    "build": "tsc",
-    "clean": "rimraf build ./tsconfig.tsbuildinfo"
+    "build": "expo-module tsc",
+    "clean": "expo-module clean",
+    "lint": "expo-module lint",
+    "prepare": "expo-module clean && expo-module tsc",
+    "test": "expo-module test",
+    "typecheck": "expo-module typecheck",
+    "watch": "expo-module-tsc --watch --preserveWatchOutput"
+  },
+  "homepage": "https://github.com/expo/expo-cli/tree/main/packages/pwa#readme",
+  "bugs": {
+    "url": "https://github.com/expo/expo-cli/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/expo/expo-cli.git",
+    "directory": "packages/pwa"
   },
   "dependencies": {
     "@expo/image-utils": "0.3.23",
     "chalk": "^4.0.0",
     "commander": "2.20.0",
-    "update-check": "1.5.3"
+    "update-check": "1.5.4"
+  },
+  "devDependencies": {
+    "expo-module-scripts": "^3.1.0"
   },
   "peerDependencies": {
     "expo": "*"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

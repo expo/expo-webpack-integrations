@@ -3,9 +3,9 @@ import { boolish } from 'getenv';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import { RuleSetRule } from 'webpack';
 
+import createBabelLoader from './createBabelLoader';
 import { getConfig, getPaths, getPublicPaths } from '../env';
 import { Environment } from '../types';
-import createBabelLoader from './createBabelLoader';
 
 const shouldUseSourceMap = boolish('GENERATE_SOURCEMAP', true);
 
