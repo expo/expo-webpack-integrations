@@ -12,11 +12,12 @@ This repo consists of packages used in the legacy global Expo CLI and related to
 
 <!-- Begin auto-generation -->
 
-| Package                                                     | Version                                                                                                                                               |
-| ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [**`@expo/next-adapter`**](./packages/next-adapter)         | [![badges](https://img.shields.io/npm/v/@expo/next-adapter?color=32cd32&style=flat-square)](https://www.npmjs.com/package/@expo/next-adapter)         |
-| [**`expo-pwa`**](./packages/pwa)                            | [![badges](https://img.shields.io/npm/v/expo-pwa?color=32cd32&style=flat-square)](https://www.npmjs.com/package/expo-pwa)                             |
-| [**`@expo/webpack-config`**](./packages/webpack-config)     | [![badges](https://img.shields.io/npm/v/@expo/webpack-config?color=32cd32&style=flat-square)](https://www.npmjs.com/package/@expo/webpack-config)     |
+| Package                                                 | Version                                                                                                                                               |
+| ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**`@expo/electron-adapter`**](./packages/next-adapter) | [![badges](https://img.shields.io/npm/v/@expo/electron-adapter?color=32cd32&style=flat-square)](https://www.npmjs.com/package/@expo/electron-adapter) |
+| [**`@expo/next-adapter`**](./packages/next-adapter)     | [![badges](https://img.shields.io/npm/v/@expo/next-adapter?color=32cd32&style=flat-square)](https://www.npmjs.com/package/@expo/next-adapter)         |
+| [**`expo-pwa`**](./packages/pwa)                        | [![badges](https://img.shields.io/npm/v/expo-pwa?color=32cd32&style=flat-square)](https://www.npmjs.com/package/expo-pwa)                             |
+| [**`@expo/webpack-config`**](./packages/webpack-config) | [![badges](https://img.shields.io/npm/v/@expo/webpack-config?color=32cd32&style=flat-square)](https://www.npmjs.com/package/@expo/webpack-config)     |
 
 ## 👏 Contributing
 
