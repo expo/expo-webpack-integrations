@@ -41,7 +41,7 @@
     "@expo/image-utils": "0.3.23",
     "chalk": "^4.0.0",
     "commander": "2.20.0",
-    "update-check": "1.5.3"
+    "update-check": "1.5.4"
   },
   "devDependencies": {
     "expo-module-scripts": "^3.1.0"
