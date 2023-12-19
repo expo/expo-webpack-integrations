@@ -1,8 +1,8 @@
 import chalk from 'chalk';
 
-import { Environment, InputEnvironment } from '../types';
 import getConfig from './getConfig';
 import { getPaths } from './paths';
+import { Environment, InputEnvironment } from '../types';
 
 /**
  * Validate the environment options and apply default values.
