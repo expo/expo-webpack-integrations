@@ -1,0 +1,19 @@
+# Ignore all node_modules and vendored Ruby
+node_modules
+vendor
+**/ts-declarations/*
+
+# Ignore build artifacts
+/packages/*/build
+/packages/osascript/lib
+/packages/webpack-config/webpack
+/packages/config/src/__tests__/fixtures/behavior/syntax-error
+/unlinked-packages/*/build
+
+# Ignore test fixtures
+/packages/install-expo-modules/**/fixtures
+
+# Generated
+.expo
+.history
+.next

@@ -1,0 +1,12 @@
+{
+  "npmClient": "yarn",
+  "registry": "https://registry.npmjs.org/",
+  "useWorkspaces": true,
+  "version": "independent",
+  "packages": ["packages/*"],
+  "command": {
+    "publish": {
+      "ignoreChanges": ["packages/config-types/**/*"]
+    }
+  }
+}
