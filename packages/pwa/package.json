@@ -11,7 +11,8 @@
     "react-native",
     "react-native-web"
   ],
-  "main": "build",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "bin": {
     "expo-pwa": "./build/cli.js"
   },

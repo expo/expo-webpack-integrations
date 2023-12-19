@@ -43,6 +43,7 @@ import {
 import { HTMLLinkNode } from './plugins/ModifyHtmlWebpackPlugin';
 import { ModuleNotFoundPlugin } from './plugins/ModuleNotFoundPlugin';
 import { Arguments, Environment, FilePaths, Mode } from './types';
+import { truthy } from './utils/array';
 
 function getDevtool(
   { production, development }: { production: boolean; development: boolean },
@@ -418,7 +419,7 @@ export default async function (env: Environment, argv: Arguments = {}): Promise<
             minify: isProd ?? false,
           },
         }),
-    ].filter(Boolean),
+    ].filter(truthy),
 
     module: {
       strictExportPresence: false,
@@ -451,7 +452,7 @@ export default async function (env: Environment, argv: Arguments = {}): Promise<
         {
           oneOf: allLoaders,
         },
-      ].filter(Boolean),
+      ].filter(truthy),
     },
     resolve: {
       // modules: ['node_modules'],
