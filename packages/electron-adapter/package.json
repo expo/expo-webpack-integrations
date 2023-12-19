@@ -1,24 +1,8 @@
 {
   "name": "@expo/electron-adapter",
   "version": "0.0.55",
+  "author": "Expo <support@expo.dev>",
   "description": "Use Electron with Expo",
-  "main": "build/Electron.js",
-  "types": "build/Electron.d.ts",
-  "scripts": {
-    "watch": "tsc --watch",
-    "build": "tsc",
-    "test": "cd example && yarn && yarn test:build",
-    "prepare": "yarn run clean && yarn build",
-    "clean": "rimraf ./tsconfig.tsbuildinfo",
-    "lint": "eslint ."
-  },
-  "bin": {
-    "expo-electron": "./bin/expo-electron.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/expo/expo-electron-adapter.git"
-  },
   "keywords": [
     "expo",
     "expo-web",
@@ -31,29 +15,34 @@
     "react-native-web"
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/expo/expo-electron-adapter/issues"
+  "main": "build/Electron.js",
+  "types": "build/Electron.d.ts",
+  "bin": {
+    "expo-electron": "./bin/expo-electron.js"
   },
-  "homepage": "https://github.com/expo/expo-electron-adapter",
   "files": [
     "build",
     "scripts",
     "bin",
     "template"
   ],
-  "devDependencies": {
-    "@expo/babel-preset-cli": "0.2.20",
-    "@expo/webpack-config": "0.12.68",
-    "@types/fs-extra": "^9.0.11",
-    "eslint-config-universe": "^7.0.1",
-    "rimraf": "^3.0.2"
+  "scripts": {
+    "build": "expo-module tsc",
+    "clean": "expo-module clean",
+    "lint": "expo-module lint",
+    "prepare": "expo-module clean && expo-module tsc",
+    "test": "cd example && yarn && yarn test:build",
+    "typecheck": "expo-module typecheck",
+    "watch": "expo-module-tsc --watch --preserveWatchOutput"
   },
-  "publishConfig": {
-    "access": "public"
+  "homepage": "https://github.com/expo/expo-cli/tree/main/packages/electron-adapter#readme",
+  "bugs": {
+    "url": "https://github.com/expo/expo-cli/issues"
   },
-  "peerDependencies": {
-    "@expo/webpack-config": "^0.10.1",
-    "electron": "^6.0.12"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/expo/expo-cli.git",
+    "directory": "packages/electron-adapter"
   },
   "dependencies": {
     "@expo/config": "3.3.38",
@@ -61,7 +50,21 @@
     "@expo/spawn-async": "^1.5.0",
     "chalk": "^4.0.0",
     "electron-webpack": "^2.7.4",
-    "resolve-from": "^5.0.0",
+    "resolve-from": "^5.0.0"
+  },
+  "devDependencies": {
+    "@expo/babel-preset-cli": "0.2.20",
+    "@expo/webpack-config": "0.12.68",
+    "@types/fs-extra": "^9.0.11",
+    "rimraf": "^3.0.2",
     "typescript": "^4.2.4"
+  },
+  "peerDependencies": {
+    "@expo/webpack-config": "^0.10.1",
+    "electron": "^6.0.12",
+    "expo-module-scripts": "^3.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
