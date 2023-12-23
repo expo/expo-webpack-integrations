@@ -37,4 +37,3 @@ The Expo source code is made available under the [MIT license](LICENSE). Some of
 </p>
 
 [docs]: https://dev.to/evanbacon/making-desktop-apps-with-electron-react-native-and-expo-5e36
-[expo-cli-issues]: https://github.com/expo/expo-cli/issues

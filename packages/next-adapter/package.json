@@ -26,13 +26,13 @@
     "typecheck": "expo-module typecheck",
     "watch": "expo-module-tsc --watch --preserveWatchOutput"
   },
-  "homepage": "https://github.com/expo/expo-cli/tree/main/packages/next-adapter#readme",
+  "homepage": "https://github.com/expo/expo-webpack-integrations/tree/main/packages/next-adapter#readme",
   "bugs": {
-    "url": "https://github.com/expo/expo-cli/issues"
+    "url": "https://github.com/expo/expo-webpack-integrations/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/expo/expo-cli.git",
+    "url": "https://github.com/expo/expo-webpack-integrations.git",
     "directory": "packages/next-adapter"
   },
   "devDependencies": {

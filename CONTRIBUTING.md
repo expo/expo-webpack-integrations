@@ -4,15 +4,15 @@
 
 You can contribute to Expo development tools in various ways, including:
 
-- [Reporting bugs or issues](https://github.com/expo/expo-cli/issues/new) on GitHub. Please make sure to include fill in all the details in the issue template to make sure the issue can be addressed as quickly as possible.
+- [Reporting bugs or issues](https://github.com/expo/expo-webpack-integrations/issues/new) on GitHub. Please make sure to include fill in all the details in the issue template to make sure the issue can be addressed as quickly as possible.
 - [Submitting improvements to the documentation](https://github.com/expo/expo/tree/main/docs). Updates, enhancements, new guides, spelling fixes...
 - Helping other people on the [forums](https://forums.expo.dev).
-- Looking at existing [issues](https://github.com/expo/expo-cli/issues) and adding more information, particularly helping to reproduce the issues.
+- Looking at existing [issues](https://github.com/expo/expo-webpack-integrations/issues) and adding more information, particularly helping to reproduce the issues.
 - [Submitting a pull request](#submitting-a-pull-request) with a bug fix or an improvement.
 
 ## Expo CLI repository
 
-The [Expo CLI GitHub repository](https://github.com/expo/expo-cli) contains the packages that make up Expo CLI.
+The [Expo CLI GitHub repository](https://github.com/expo/expo-webpack-integrations) contains the packages that make up Expo CLI.
 
 ### Packages
 
@@ -66,7 +66,7 @@ Then you can run it, and visit `chrome://inspect/#devices` in Chrome, and press 
 
 To submit a pull request:
 
-1. Fork the [repository](https://github.com/expo/expo-cli) and create a feature branch. (Existing contributors can create feature branches without forking. Prefix the branch name with `@your-github-username/`.)
+1. Fork the [repository](https://github.com/expo/expo-webpack-integrations) and create a feature branch. (Existing contributors can create feature branches without forking. Prefix the branch name with `@your-github-username/`.)
 2. Write the description of your pull request. Make sure to include a test plan and test your changes.
 3. Make sure all tests pass on CircleCI.
 4. Wait for a review and adjust the code if necessary.
