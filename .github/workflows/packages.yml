@@ -1,0 +1,49 @@
+name: Packages
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node: [16.x]
+        package:
+          - electron-adapter
+          - next-adapter
+          - pwa
+          - webpack-config
+    steps:
+      - name: 🏗 Setup repository
+        uses: actions/checkout@v3
+
+      - name: 🏗 Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+          cache: yarn
+
+      - name: 📦 Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: 🛠 Build dependencies
+        run: yarn run build
+
+      - name: 🚨 Lint ${{ matrix.package }}
+        working-directory: packages/${{ matrix.package }}
+        run: yarn run lint
+
+      - name: 🧪 Test ${{ matrix.package }}
+        working-directory: packages/${{ matrix.package }}
+        run: yarn run test
+
