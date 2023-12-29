@@ -17,7 +17,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node: [16.x]
+        node: [18.x]
         package:
           - electron-adapter
           - next-adapter
