@@ -22,7 +22,7 @@
     "clean": "expo-module clean",
     "lint": "expo-module lint",
     "prepare": "expo-module clean && expo-module tsc",
-    "test": "expo-module test",
+    "test": "echo 'no tests yet'",
     "typecheck": "expo-module typecheck",
     "watch": "expo-module-tsc --watch --preserveWatchOutput"
   },
