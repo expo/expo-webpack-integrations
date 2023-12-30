@@ -1,11 +1,12 @@
-import { dirname } from 'path';
+import path from 'path';
 
 import createConfig from '..';
 import normalizePaths from '../utils/normalizePaths';
 
 jest.unmock('resolve-from');
 
-const projectRoot = dirname(require.resolve('@expo/webpack-config/e2e/basic'));
+const projectRoot = path.dirname(require.resolve('@expo/webpack-config/e2e/basic'));
+const monorepoRootDirName = path.basename(path.join(__dirname, '../../../../'));
 
 function normalizeConfig(config) {
   // Replace plugins with their names
@@ -18,7 +19,7 @@ function normalizeConfig(config) {
   }
 
   // Make the paths be relative to the project
-  const normalized = normalizePaths(config, value => value.split('cli/').pop());
+  const normalized = normalizePaths(config, value => value.split(monorepoRootDirName + '/').pop());
 
   // Strip out any path issues that come from testing in a monorepo.
   function normalizeLoaders(loaders) {

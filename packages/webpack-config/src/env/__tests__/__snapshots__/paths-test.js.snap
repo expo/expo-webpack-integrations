@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`has consistent defaults 1`] = `
-Object {
+{
   "absolute": [Function],
   "appJsConfig": "e2e/basic/jsconfig.json",
   "appMain": "e2e/basic/index.js",
@@ -10,7 +10,7 @@ Object {
   "includeModule": [Function],
   "modules": "e2e/basic/node_modules",
   "packageJson": "e2e/basic/package.json",
-  "production": Object {
+  "production": {
     "favicon": "e2e/basic/web-build/favicon.ico",
     "folder": "e2e/basic/web-build",
     "get": [Function],
@@ -20,7 +20,7 @@ Object {
   },
   "root": "e2e/basic",
   "servedPath": "/",
-  "template": Object {
+  "template": {
     "favicon": "web-default/favicon.ico",
     "folder": "web-default",
     "get": [Function],
@@ -34,7 +34,7 @@ Object {
 exports[`uses a custom public path from the homepage field of a project's package.json 1`] = `"/homepage-defined/"`;
 
 exports[`works with no app.json 1`] = `
-Object {
+{
   "absolute": [Function],
   "appJsConfig": "e2e/minimum/jsconfig.json",
   "appMain": "e2e/minimum/index.js",
@@ -43,7 +43,7 @@ Object {
   "includeModule": [Function],
   "modules": "e2e/minimum/node_modules",
   "packageJson": "e2e/minimum/package.json",
-  "production": Object {
+  "production": {
     "favicon": "e2e/minimum/web-build/favicon.ico",
     "folder": "e2e/minimum/web-build",
     "get": [Function],
@@ -53,7 +53,7 @@ Object {
   },
   "root": "e2e/minimum",
   "servedPath": "/",
-  "template": Object {
+  "template": {
     "favicon": "web-default/favicon.ico",
     "folder": "web-default",
     "get": [Function],

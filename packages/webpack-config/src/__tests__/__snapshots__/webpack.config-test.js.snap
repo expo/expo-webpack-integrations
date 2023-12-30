@@ -1,41 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`web web development 1`] = `
-Object {
+{
   "bail": false,
-  "cache": Object {
-    "buildDependencies": Object {
-      "config": Array [
+  "cache": {
+    "buildDependencies": {
+      "config": [
         "packages/webpack-config/src/webpack.config.ts",
       ],
-      "defaultWebpack": Array [
-        "node_modules/webpack/lib/",
+      "defaultWebpack": [
+        "packages/webpack-config/node_modules/webpack/lib/",
       ],
-      "tsconfig": Array [],
+      "tsconfig": [],
     },
     "cacheDirectory": "packages/webpack-config/e2e/basic/node_modules/.cache/web",
     "store": "pack",
     "type": "filesystem",
   },
   "context": "packages/webpack-config/e2e/basic",
-  "devServer": Object {
-    "allowedHosts": Array [
+  "devServer": {
+    "allowedHosts": [
       "all",
     ],
-    "client": Object {
+    "client": {
       "overlay": false,
-      "webSocketURL": Object {
+      "webSocketURL": {
         "hostname": undefined,
         "pathname": "/_expo/ws",
         "port": undefined,
       },
     },
     "compress": true,
-    "devMiddleware": Object {
+    "devMiddleware": {
       "index": true,
       "publicPath": "",
     },
-    "historyApiFallback": Object {
+    "historyApiFallback": {
       "disableDotRule": true,
       "index": "/",
     },
@@ -43,15 +43,15 @@ Object {
     "https": false,
     "proxy": undefined,
     "setupMiddlewares": [Function],
-    "static": Object {
+    "static": {
       "directory": "packages/webpack-config/web-default",
-      "publicPath": Array [
+      "publicPath": [
         "/",
       ],
-      "watch": Object {},
+      "watch": {},
     },
-    "webSocketServer": Object {
-      "options": Object {
+    "webSocketServer": {
+      "options": {
         "host": undefined,
         "path": "/_expo/ws",
         "port": undefined,
@@ -60,50 +60,50 @@ Object {
     },
   },
   "devtool": "cheap-module-source-map",
-  "infrastructureLogging": Object {
+  "infrastructureLogging": {
     "debug": true,
     "level": "verbose",
   },
   "mode": "development",
-  "module": Object {
-    "rules": Array [
-      Object {
+  "module": {
+    "rules": [
+      {
         "enforce": "pre",
         "exclude": /@babel\\(\\?:\\\\/\\|\\\\\\\\\\{1,2\\}\\)runtime/,
-        "resolve": Object {
+        "resolve": {
           "fullySpecified": false,
         },
         "test": /\\\\\\.\\(js\\|mjs\\|jsx\\|ts\\|tsx\\|css\\)\\$/,
-        "use": Array [
-          Object {
+        "use": [
+          {
             "loader": "node_modules/source-map-loader/dist/cjs.js",
-            "options": Object {
+            "options": {
               "filterSourceMappingUrl": [Function],
             },
           },
         ],
       },
-      Object {
-        "oneOf": Array [
-          Object {
+      {
+        "oneOf": [
+          {
             "mimetype": "image/avif",
-            "parser": Object {
-              "dataUrlCondition": Object {
+            "parser": {
+              "dataUrlCondition": {
                 "maxSize": 1000,
               },
             },
-            "test": Array [
+            "test": [
               /\\\\\\.avif\\$/,
             ],
             "type": "asset",
           },
-          Object {
-            "parser": Object {
-              "dataUrlCondition": Object {
+          {
+            "parser": {
+              "dataUrlCondition": {
                 "maxSize": 1000,
               },
             },
-            "test": Array [
+            "test": [
               /\\\\\\.bmp\\$/,
               /\\\\\\.gif\\$/,
               /\\\\\\.jpe\\?g\\$/,
@@ -112,20 +112,20 @@ Object {
             ],
             "type": "asset",
           },
-          Object {
+          {
             "include": [Function],
-            "resolve": Object {
+            "resolve": {
               "fullySpecified": false,
             },
             "test": /\\\\\\.\\(js\\|mjs\\|jsx\\|ts\\|tsx\\)\\$/,
-            "use": Object {
+            "use": {
               "loader": "node_modules/babel-loader/lib/index.js",
-              "options": Object {
+              "options": {
                 "babelrc": false,
                 "cacheCompression": false,
                 "cacheDirectory": "packages/webpack-config/e2e/basic/.expo/web/cache/development/babel-loader",
                 "cacheIdentifier": "custom-value-to-skip-babel-config-error",
-                "caller": Object {
+                "caller": {
                   "__dangerous_rule_id": "expo-babel-loader",
                   "bundler": "webpack",
                   "mode": "development",
@@ -140,16 +140,16 @@ Object {
               },
             },
           },
-          Object {
+          {
             "sideEffects": true,
             "test": /\\\\\\.\\(css\\)\\$/,
-            "use": Array [
+            "use": [
               "node_modules/style-loader/dist/cjs.js",
-              Object {
+              {
                 "loader": "node_modules/css-loader/dist/cjs.js",
-                "options": Object {
+                "options": {
                   "importLoaders": 1,
-                  "modules": Object {
+                  "modules": {
                     "mode": "icss",
                   },
                   "sourceMap": true,
@@ -157,8 +157,8 @@ Object {
               },
             ],
           },
-          Object {
-            "exclude": Array [
+          {
+            "exclude": [
               /\\^\\$/,
               /\\\\\\.\\(js\\|mjs\\|jsx\\|ts\\|tsx\\)\\$/,
               /\\\\\\.html\\$/,
@@ -172,7 +172,7 @@ Object {
     "strictExportPresence": false,
   },
   "name": "web",
-  "output": Object {
+  "output": {
     "assetModuleFilename": "static/media/[name].[hash][ext]",
     "chunkFilename": "static/js/[name].chunk.js",
     "devtoolModuleFilenameTemplate": [Function],
@@ -182,7 +182,7 @@ Object {
     "publicPath": "/",
     "uniqueName": "web",
   },
-  "plugins": Array [
+  "plugins": [
     "HtmlWebpackPlugin",
     "InterpolateHtmlPlugin",
     "FaviconWebpackPlugin",
@@ -191,8 +191,8 @@ Object {
     "WebpackManifestPlugin",
     "ExpectedErrorsPlugin",
   ],
-  "resolve": Object {
-    "alias": Object {
+  "resolve": {
+    "alias": {
       "react-native$": "react-native-web",
       "react-native/Libraries/Components/View/ViewStylePropTypes$": "react-native-web/dist/exports/View/ViewStylePropTypes",
       "react-native/Libraries/EventEmitter/NativeEventEmitter$": "react-native-web/dist/vendor/react-native/NativeEventEmitter",
@@ -200,12 +200,12 @@ Object {
       "react-native/Libraries/vendor/emitter/EventEmitter$": "react-native-web/dist/vendor/react-native/emitter/EventEmitter",
       "react-native/Libraries/vendor/emitter/EventSubscriptionVendor$": "react-native-web/dist/vendor/react-native/emitter/EventSubscriptionVendor",
     },
-    "aliasFields": Array [
+    "aliasFields": [
       "browser",
       "module",
       "main",
     ],
-    "extensions": Array [
+    "extensions": [
       ".web.ts",
       ".web.tsx",
       ".web.mjs",
@@ -219,7 +219,7 @@ Object {
       ".json",
       ".wasm",
     ],
-    "mainFields": Array [
+    "mainFields": [
       "browser",
       "module",
       "main",
@@ -227,12 +227,12 @@ Object {
     "symlinks": false,
   },
   "stats": "detailed",
-  "target": Array [
+  "target": [
     "web",
   ],
-  "watchOptions": Object {
+  "watchOptions": {
     "aggregateTimeout": 5,
-    "ignored": Array [
+    "ignored": [
       "**/.git/**",
       "**/node_modules/**",
       "**/.expo/**",
@@ -245,17 +245,17 @@ Object {
 `;
 
 exports[`web web production 1`] = `
-Object {
+{
   "bail": true,
-  "cache": Object {
-    "buildDependencies": Object {
-      "config": Array [
+  "cache": {
+    "buildDependencies": {
+      "config": [
         "packages/webpack-config/src/webpack.config.ts",
       ],
-      "defaultWebpack": Array [
-        "node_modules/webpack/lib/",
+      "defaultWebpack": [
+        "packages/webpack-config/node_modules/webpack/lib/",
       ],
-      "tsconfig": Array [],
+      "tsconfig": [],
     },
     "cacheDirectory": "packages/webpack-config/e2e/basic/node_modules/.cache/web",
     "store": "pack",
@@ -263,50 +263,50 @@ Object {
   },
   "context": "packages/webpack-config/e2e/basic",
   "devtool": "source-map",
-  "infrastructureLogging": Object {
+  "infrastructureLogging": {
     "debug": true,
     "level": "verbose",
   },
   "mode": "production",
-  "module": Object {
-    "rules": Array [
-      Object {
+  "module": {
+    "rules": [
+      {
         "enforce": "pre",
         "exclude": /@babel\\(\\?:\\\\/\\|\\\\\\\\\\{1,2\\}\\)runtime/,
-        "resolve": Object {
+        "resolve": {
           "fullySpecified": false,
         },
         "test": /\\\\\\.\\(js\\|mjs\\|jsx\\|ts\\|tsx\\|css\\)\\$/,
-        "use": Array [
-          Object {
+        "use": [
+          {
             "loader": "node_modules/source-map-loader/dist/cjs.js",
-            "options": Object {
+            "options": {
               "filterSourceMappingUrl": [Function],
             },
           },
         ],
       },
-      Object {
-        "oneOf": Array [
-          Object {
+      {
+        "oneOf": [
+          {
             "mimetype": "image/avif",
-            "parser": Object {
-              "dataUrlCondition": Object {
+            "parser": {
+              "dataUrlCondition": {
                 "maxSize": 1000,
               },
             },
-            "test": Array [
+            "test": [
               /\\\\\\.avif\\$/,
             ],
             "type": "asset",
           },
-          Object {
-            "parser": Object {
-              "dataUrlCondition": Object {
+          {
+            "parser": {
+              "dataUrlCondition": {
                 "maxSize": 1000,
               },
             },
-            "test": Array [
+            "test": [
               /\\\\\\.bmp\\$/,
               /\\\\\\.gif\\$/,
               /\\\\\\.jpe\\?g\\$/,
@@ -315,20 +315,20 @@ Object {
             ],
             "type": "asset",
           },
-          Object {
+          {
             "include": [Function],
-            "resolve": Object {
+            "resolve": {
               "fullySpecified": false,
             },
             "test": /\\\\\\.\\(js\\|mjs\\|jsx\\|ts\\|tsx\\)\\$/,
-            "use": Object {
+            "use": {
               "loader": "node_modules/babel-loader/lib/index.js",
-              "options": Object {
+              "options": {
                 "babelrc": false,
                 "cacheCompression": false,
                 "cacheDirectory": "packages/webpack-config/e2e/basic/.expo/web/cache/production/babel-loader",
                 "cacheIdentifier": "custom-value-to-skip-babel-config-error",
-                "caller": Object {
+                "caller": {
                   "__dangerous_rule_id": "expo-babel-loader",
                   "bundler": "webpack",
                   "mode": "production",
@@ -343,19 +343,19 @@ Object {
               },
             },
           },
-          Object {
+          {
             "sideEffects": true,
             "test": /\\\\\\.\\(css\\)\\$/,
-            "use": Array [
-              Object {
+            "use": [
+              {
                 "loader": "node_modules/mini-css-extract-plugin/dist/loader.js",
-                "options": Object {},
+                "options": {},
               },
-              Object {
+              {
                 "loader": "node_modules/css-loader/dist/cjs.js",
-                "options": Object {
+                "options": {
                   "importLoaders": 1,
-                  "modules": Object {
+                  "modules": {
                     "mode": "icss",
                   },
                   "sourceMap": true,
@@ -363,8 +363,8 @@ Object {
               },
             ],
           },
-          Object {
-            "exclude": Array [
+          {
+            "exclude": [
               /\\^\\$/,
               /\\\\\\.\\(js\\|mjs\\|jsx\\|ts\\|tsx\\)\\$/,
               /\\\\\\.html\\$/,
@@ -378,19 +378,19 @@ Object {
     "strictExportPresence": false,
   },
   "name": "web",
-  "optimization": Object {
+  "optimization": {
     "emitOnErrors": false,
     "minimize": true,
-    "minimizer": Array [
-      Object {
-        "options": Object {
+    "minimizer": [
+      {
+        "options": {
           "exclude": undefined,
           "extractComments": true,
           "include": undefined,
-          "minimizer": Object {
+          "minimizer": {
             "implementation": [Function],
-            "options": Object {
-              "compress": Object {
+            "options": {
+              "compress": {
                 "comparisons": false,
                 "ecma": 5,
                 "inline": 2,
@@ -398,15 +398,15 @@ Object {
               },
               "keep_classnames": false,
               "keep_fnames": false,
-              "mangle": Object {
+              "mangle": {
                 "safari10": true,
               },
-              "output": Object {
+              "output": {
                 "ascii_only": true,
                 "comments": false,
                 "ecma": 5,
               },
-              "parse": Object {
+              "parse": {
                 "ecma": 2018,
               },
             },
@@ -415,13 +415,13 @@ Object {
           "test": /\\\\\\.\\[cm\\]\\?js\\(\\\\\\?\\.\\*\\)\\?\\$/i,
         },
       },
-      Object {
-        "options": Object {
+      {
+        "options": {
           "exclude": undefined,
           "include": undefined,
-          "minimizer": Object {
+          "minimizer": {
             "implementation": [Function],
-            "options": Object {},
+            "options": {},
           },
           "parallel": true,
           "test": /\\\\\\.css\\(\\\\\\?\\.\\*\\)\\?\\$/i,
@@ -430,12 +430,12 @@ Object {
       },
     ],
     "nodeEnv": false,
-    "splitChunks": Object {
+    "splitChunks": {
       "chunks": "all",
     },
     "usedExports": false,
   },
-  "output": Object {
+  "output": {
     "assetModuleFilename": "static/media/[name].[hash][ext]",
     "chunkFilename": "static/js/[name].[contenthash:8].chunk.js",
     "devtoolModuleFilenameTemplate": [Function],
@@ -444,7 +444,7 @@ Object {
     "publicPath": "/",
     "uniqueName": "web",
   },
-  "plugins": Array [
+  "plugins": [
     "CleanWebpackPlugin",
     "CopyPlugin",
     "HtmlWebpackPlugin",
@@ -458,8 +458,8 @@ Object {
     "WebpackManifestPlugin",
     "ExpectedErrorsPlugin",
   ],
-  "resolve": Object {
-    "alias": Object {
+  "resolve": {
+    "alias": {
       "react-native$": "react-native-web",
       "react-native/Libraries/Components/View/ViewStylePropTypes$": "react-native-web/dist/exports/View/ViewStylePropTypes",
       "react-native/Libraries/EventEmitter/NativeEventEmitter$": "react-native-web/dist/vendor/react-native/NativeEventEmitter",
@@ -467,12 +467,12 @@ Object {
       "react-native/Libraries/vendor/emitter/EventEmitter$": "react-native-web/dist/vendor/react-native/emitter/EventEmitter",
       "react-native/Libraries/vendor/emitter/EventSubscriptionVendor$": "react-native-web/dist/vendor/react-native/emitter/EventSubscriptionVendor",
     },
-    "aliasFields": Array [
+    "aliasFields": [
       "browser",
       "module",
       "main",
     ],
-    "extensions": Array [
+    "extensions": [
       ".web.ts",
       ".web.tsx",
       ".web.mjs",
@@ -486,7 +486,7 @@ Object {
       ".json",
       ".wasm",
     ],
-    "mainFields": Array [
+    "mainFields": [
       "browser",
       "module",
       "main",
@@ -494,12 +494,12 @@ Object {
     "symlinks": false,
   },
   "stats": "detailed",
-  "target": Array [
+  "target": [
     "web",
   ],
-  "watchOptions": Object {
+  "watchOptions": {
     "aggregateTimeout": 5,
-    "ignored": Array [
+    "ignored": [
       "**/.git/**",
       "**/node_modules/**",
       "**/.expo/**",

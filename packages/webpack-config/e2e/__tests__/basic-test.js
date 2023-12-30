@@ -1,7 +1,6 @@
-/* global page */
 import getenv from 'getenv';
 
-import config from '../../jest-puppeteer.config';
+import config from '../jest-puppeteer.config';
 
 // We know that CI works in this process, but we want to test that it matches the process that our app runs in.
 const isInCI = getenv.boolish('CI', false);

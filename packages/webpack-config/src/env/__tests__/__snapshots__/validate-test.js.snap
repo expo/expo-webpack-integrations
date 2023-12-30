@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`auto fills a truthy report 1`] = `
-Object {
+{
   "https": false,
   "mode": "development",
   "platform": "web",
@@ -9,7 +9,7 @@ Object {
 `;
 
 exports[`returns a full environment 1`] = `
-Object {
+{
   "https": false,
   "mode": "development",
   "platform": "web",
