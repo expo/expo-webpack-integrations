@@ -36,7 +36,7 @@
     "directory": "packages/next-adapter"
   },
   "devDependencies": {
-    "expo-module-scripts": "^3.1.0"
+    "expo-module-scripts": "^3.4.0"
   },
   "peerDependencies": {
     "expo": "^46",
