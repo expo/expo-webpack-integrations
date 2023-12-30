@@ -10,6 +10,7 @@ export default {
     backgroundColor: '#ffffff',
   },
   web: {
+    bundler: 'webpack',
     build: {
       babel: {
         use: {
