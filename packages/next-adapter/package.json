@@ -40,9 +40,7 @@
   },
   "peerDependencies": {
     "expo": ">=46",
-    "next": ">=13",
-    "react": ">=18",
-    "react-native-web": ">=0.18.0",
+    "react-native-web": "^0.18 || ^0.19",
     "webpack": "^4.46.0 || ^5.74.0"
   },
   "publishConfig": {
