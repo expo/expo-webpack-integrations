@@ -6,6 +6,8 @@ This is the log of notable changes to Expo CLI and related packages.
 
 ### 🛠 Breaking changes
 
+- [next-adapter] Loosen peer dependency restrictions ([#25](https://github.com/expo/expo-webpack-integrations/pull/25))
+
 ### 🎉 New features
 
 ### 🧹 Chores
