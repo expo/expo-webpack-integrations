@@ -1,6 +1,6 @@
 {
   "name": "@expo/webpack-config",
-  "version": "18.1.3",
+  "version": "19.0.0",
   "author": "Expo <support@expo.dev>",
   "description": "A Webpack configuration used to bundle Expo websites with Expo CLI.",
   "license": "MIT",
