@@ -88,7 +88,7 @@
     "serve": "^11.1.0"
   },
   "peerDependencies": {
-    "expo": "^49.0.7"
+    "expo": ">=49.0.7"
   },
   "engines": {
     "node": ">=12"
