@@ -1,6 +1,11 @@
 # Changelog
 
-This is the log of notable changes to Expo CLI and related packages.
+This is the legacy changelog for changes prior to this repository, see individual package changelogs for latest changes.
+
+- `@expo/electron-adapter` → [./packages/electron-adapter/CHANGELOG.md](./packages/electron-adapter/CHANGELOG.md)
+- `@expo/next-adapter` → [./packages/next-adapter/CHANGELOG.md](./packages/next-adapter/CHANGELOG.md)
+- `@expo/webpack-config` → [./packages/webpack-config/CHANGELOG.md](./packages/webpack-config/CHANGELOG.md)
+- `expo-pwa` → [./packages/expo-pwa/CHANGELOG.md](./packages/expo-pwa/CHANGELOG.md)
 
 ## main
 
